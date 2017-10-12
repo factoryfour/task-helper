@@ -1,90 +1,68 @@
 /* eslint
-valid-typeof: 'off'
+valid-typeof: 'off',
+vars-on-top: 'off',
+no-var: off
 */
 
-class Datapoint {
-	constructor(type) {
-		// Initialize the body property
-		const body = {};
-		Object.defineProperty(body, 'body', {
-			enumerable: false,
-			configurable: false,
-			writable: false
-		});
-		this.body = body;
-		// Declare empty JSON as body to store values
-		this.body.type = null;
-		this.body.format = null;
-		this.body.content = {
-			value: null
-		};
-		// Add type
-		const dpType = type || null;
-		this.body.type = dpType;
-	}
+const Datapoint = require('./datapoint');
 
-	// Getters ====================================
+function checkDatapointType(input) {
+	return input instanceof Datapoint || input instanceof Object;
+}
 
-	// Datapoint body
-	get data() {
-		return this.body;
-	}
+function checkType(input) {
+	return input instanceof Datapoint || input instanceof Object;
+}
 
-	// Format of the value (string, number)
-	get format() {
-		return this.body.format;
-	}
-
-	// Datapoint type
-	get type() {
-		return this.body.type;
-	}
-
-	// Content JSON
-	get content() {
-		return this.body.content;
+class TaskOutput {
+	constructor() {
+		// Initialize empty arrays for values
+		this.datapoints = [];
+		this.notifications = [];
+		this.assignments = [];
 	}
 
 	// Setters ====================================
 
-	// Set the type
-	setType(type) {
-		if (typeof type === 'string') {
-			this.body.type = type;
-			return this;
-		}
-		const typeErr = 'Type must be a valid string';
-		throw Error(typeErr);
-	}
-
-	// Set the format
-	setFormat(format) {
-		if (typeof format === 'string') {
-			this.body.format = format;
-			return this;
-		}
-		const typeErr = 'Type must be a valid string representing a type (string, number)';
-		throw Error(typeErr);
-	}
-
-	// Set the value
-	setValue(val) {
-		if (!this.body.format) {
-			const fmtError = 'Datapoint does not have a format specified.';
-			throw Error(fmtError);
-		} else if (typeof val != this.body.format) {
-			const fmtError = `Value type must match format: ${this.body.format}`;
-			throw Error(fmtError);
-		}
-		this.body.content.value = val;
+	// Add a datapoint
+	addDatapoint(dpt) {
+		if (checkDatapointType(dpt)) this.datapoints.push(dpt);
+		else throw Error('Input must be JSON or Datapoint object.');
 		return this;
 	}
 
-	// Convert datapoint to string
+	// Add a datapoint
+	addNotification(notif) {
+		if (checkType(notif)) this.notifications.push(notif);
+		else throw Error('Input must be JSON object.');
+		return this;
+	}
+
+	// Add a datapoint
+	addAssignment(assn) {
+		if (checkType(assn)) this.assignments.push(assn);
+		else throw Error('Input must be JSON object.');
+		return this;
+	}
+
+	generate() {
+		const output = {
+			datapoints: [],
+			notifications: this.notifications,
+			assignments: this.assignments
+		};
+		// Reformat datapoints if stored as an object
+		this.datapoints.forEach((dpt) => {
+			output.datapoints.push(dpt instanceof Datapoint ? dpt.data : dpt);
+		});
+		return output;
+	}
+
+	// Convert task output to string
 	toString() {
-		return JSON.stringify(this.body);
+		return JSON.stringify(this.generate());
 	}
 
 }
 
-module.exports = Datapoint;
+module.exports = TaskOutput;

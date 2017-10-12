@@ -3,7 +3,7 @@ valid-typeof: 'off'
 */
 
 class Datapoint {
-	constructor(type) {
+	constructor(type, format) {
 		// Initialize the body property
 		const body = {};
 		Object.defineProperty(body, 'body', {
@@ -18,9 +18,10 @@ class Datapoint {
 		this.body.content = {
 			value: null
 		};
-		// Add type
-		const dpType = type || null;
-		this.body.type = dpType;
+		// Add type (if provided)
+		if (type) this.setType(type);
+		// Add format (if provided)
+		if (format) this.setFormat(format);
 	}
 
 	// Getters ====================================
