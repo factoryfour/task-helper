@@ -23,24 +23,31 @@ class Datapoint {
 		this.body.type = dpType;
 	}
 
-	// Getters
+	// Getters ====================================
+
+	// Datapoint body
 	get data() {
 		return this.body;
 	}
 
+	// Format of the value (string, number)
 	get format() {
 		return this.body.format;
 	}
 
+	// Datapoint type
 	get type() {
 		return this.body.type;
 	}
 
+	// Content JSON
 	get content() {
 		return this.body.content;
 	}
 
-	// Setters
+	// Setters ====================================
+
+	// Set the type
 	setType(type) {
 		if (typeof type === 'string') {
 			this.body.type = type;
@@ -50,15 +57,17 @@ class Datapoint {
 		throw Error(typeErr);
 	}
 
+	// Set the format
 	setFormat(format) {
 		if (typeof format === 'string') {
 			this.body.format = format;
 			return this;
 		}
-		const typeErr = 'Type must be a valid string representing a type';
+		const typeErr = 'Type must be a valid string representing a type (string, number)';
 		throw Error(typeErr);
 	}
 
+	// Set the value
 	setValue(val) {
 		if (!this.body.format) {
 			const fmtError = 'Datapoint does not have a format specified.';
@@ -71,6 +80,7 @@ class Datapoint {
 		return this;
 	}
 
+	// Convert datapoint to string
 	toString() {
 		return JSON.stringify(this.body);
 	}
