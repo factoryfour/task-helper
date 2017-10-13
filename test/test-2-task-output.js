@@ -34,8 +34,12 @@ describe('Task Output Methods', () => {
 
 	it('task-output-3 - Add datapoint objects', (done) => {
 		const tout = new TaskOutput();
-		const dp1 = new Datapoint().setType('test-type').setFormat('string').setValue('hello');
-		const dp2 = new Datapoint().setType('test-type').setFormat('number').setValue(52);
+		const dp1 = new Datapoint().setType('test-type').setFormat('string').setContent({ value: 'hello' });
+		dp1.setCustomPermissions('lalala');
+		dp1.setParent('mother');
+		const dp2 = new Datapoint().setType('test-type').setFormat('number').setContent(52);
+		dp2.setCustomPermissions('lalala');
+		dp2.setParent('father');
 		tout.addDatapoint(dp1).addDatapoint(dp2.data);
 		should.equal(tout.datapoints.length, 2);
 		(tout.generate() instanceof Object).should.be.true();
@@ -64,8 +68,10 @@ describe('Task Output Methods', () => {
 
 	it('task-output-6 - Generate with stuff', (done) => {
 		const tout = new TaskOutput();
-		const dp1 = new Datapoint().setType('test-type').setFormat('string').setValue('hello');
-		const dp2 = new Datapoint().setType('test-type').setFormat('number').setValue(52);
+		const dp1 = new Datapoint().setType('test-type').setFormat('string').setContent({ value: 'hello' });
+		dp1.setCustomPermissions('lalala');
+		dp1.setParent('mother');
+		const dp2 = new Datapoint().setType('test-type').setFormat('number').setContent(52);
 		tout.addDatapoint(dp1).addDatapoint(dp2.data);
 		const nt1 = { value: 'hello' };
 		const nt2 = { value: 'world' };
@@ -77,19 +83,27 @@ describe('Task Output Methods', () => {
 		done();
 	});
 
-	it('task-output-7a - Cant add non-Objects: datapoints', (done) => {
+	it('task-output-7a - Cant add incomplete datapoints', (done) => {
+		const tout = new TaskOutput();
+		const dp1 = new Datapoint().setType('test-type').setFormat('string').setContent({ value: 'hello' });
+		tout.addDatapoint(dp1);
+		should(() => { tout.generate(); }).throwError();
+		done();
+	});
+
+	it('task-output-7b - Cant add non-Objects: datapoints', (done) => {
 		const tout = new TaskOutput();
 		should(() => { tout.addDatapoint('not an object'); }).throwError();
 		done();
 	});
 
-	it('task-output-7b - Cant add non-Objects: notifications', (done) => {
+	it('task-output-7c - Cant add non-Objects: notifications', (done) => {
 		const tout = new TaskOutput();
 		should(() => { tout.addNotification('not an object'); }).throwError();
 		done();
 	});
 
-	it('task-output-7c - Cant add non-Objects: assignments', (done) => {
+	it('task-output-7d - Cant add non-Objects: assignments', (done) => {
 		const tout = new TaskOutput();
 		should(() => { tout.addAssignment('not an object'); }).throwError();
 		done();

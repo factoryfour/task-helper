@@ -53,7 +53,7 @@ class TaskOutput {
 		};
 		// Reformat datapoints if stored as an object
 		this.datapoints.forEach((dpt) => {
-			output.datapoints.push(dpt instanceof Datapoint ? dpt.data : dpt);
+			output.datapoints.push(dpt instanceof Datapoint ? dpt.generate() : dpt);
 		});
 		return output;
 	}

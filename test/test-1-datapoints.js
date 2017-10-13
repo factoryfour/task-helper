@@ -68,18 +68,42 @@ describe('Datapoint Methods', () => {
 		done();
 	});
 
-	it('datapoints-4a - Set value: string', (done) => {
+	it('datapoints-4a - Set content: string', (done) => {
 		const dp1 = new Datapoint();
 		dp1.setFormat('string');
-		dp1.setValue('fifty-two');
+		dp1.setContent({ value: 'fifty-two' });
 		should.equal(dp1.content.value, 'fifty-two');
 		done();
 	});
 
-	it('datapoints-4b - Set value: number', (done) => {
+	it('datapoints-4b - Set content: number', (done) => {
 		const dp1 = new Datapoint();
 		dp1.setFormat('number');
-		dp1.setValue(52);
+		dp1.setContent({ value: 52 });
+		should.equal(dp1.content.value, 52);
+		done();
+	});
+
+	it('datapoints-4c - Set content with title: string', (done) => {
+		const dp1 = new Datapoint();
+		dp1.setFormat('string');
+		dp1.setContent({ title: 'a_number', value: 'fifty-two' });
+		should.equal(dp1.content.value, 'fifty-two');
+		done();
+	});
+
+	it('datapoints-4d - Set content with value: string', (done) => {
+		const dp1 = new Datapoint();
+		dp1.setFormat('string');
+		dp1.setContent('fifty-two');
+		should.equal(dp1.content.value, 'fifty-two');
+		done();
+	});
+
+	it('datapoints-4e - Set content with value: number', (done) => {
+		const dp1 = new Datapoint();
+		dp1.setFormat('number');
+		dp1.setContent(52);
 		should.equal(dp1.content.value, 52);
 		done();
 	});
@@ -98,28 +122,127 @@ describe('Datapoint Methods', () => {
 
 	it('datapoints-7 - Must have format for value', (done) => {
 		const dp1 = new Datapoint();
-		should(() => { dp1.setValue(1); }).throwError();
+		should(() => { dp1.setContent(1); }).throwError();
 		done();
 	});
 
 	it('datapoints-8 - Value type must match format', (done) => {
 		const dp1 = new Datapoint();
 		dp1.setFormat('string');
-		should(() => { dp1.setValue(1); }).throwError();
+		should(() => { dp1.setContent(1); }).throwError();
 		done();
 	});
 
-	it('datapoints-9 - Chain commands', (done) => {
-		const dp1 = new Datapoint().setType('test-type').setFormat('string').setValue('hello');
+	it('datapoints-9 - Set parent', (done) => {
+		const dp1 = new Datapoint();
+		dp1.setParent('mama');
+		should.equal(dp1.parent, 'mama');
+		done();
+	});
+
+	it('datapoints-10 - Set custom permissions', (done) => {
+		const dp1 = new Datapoint();
+		dp1.setCustomPermissions('ppp');
+		should.equal(dp1.permissions, 'ppp');
+		done();
+	});
+
+	it('datapoints-11 - Set permissions with JSON', (done) => {
+		const newPerms = {
+			GET: [],
+			PUT: [],
+			DELETE: []
+		};
+		const dp1 = new Datapoint();
+		dp1.setPermissions(newPerms);
+		should.equal(typeof dp1.permissions, 'object');
+		should.equal(dp1.permissions.GET.length, 0);
+		should.equal(dp1.permissions.PUT.length, 0);
+		should.equal(dp1.permissions.DELETE.length, 0);
+		done();
+	});
+
+	it('datapoints-12 - Add permissions', (done) => {
+		const dp1 = new Datapoint();
+		dp1.addPermission('GET', 'bruce');
+		dp1.addPermission('PUT', 'clark');
+		dp1.addPermission('DELETE', 'diana');
+		should.equal(typeof dp1.permissions, 'object');
+		should.equal(dp1.permissions.GET.length, 1);
+		should.equal(dp1.permissions.PUT.length, 1);
+		should.equal(dp1.permissions.DELETE.length, 1);
+		done();
+	});
+
+	it('datapoints-13a - No permissions override with custom', (done) => {
+		const dp1 = new Datapoint();
+		dp1.addPermission('GET', 'asdf');
+		should(() => { dp1.setCustomPermissions('uh oh'); }).throwError();
+		done();
+	});
+
+	it('datapoints-13b - No permissions override with set', (done) => {
+		const newPerms = {
+			GET: [],
+			PUT: [],
+			DELETE: []
+		};
+		const dp1 = new Datapoint();
+		dp1.setCustomPermissions('uh oh');
+		should(() => { dp1.setPermission(newPerms); }).throwError();
+		done();
+	});
+
+	it('datapoints-14 - Chain commands', (done) => {
+		const dp1 = new Datapoint().setType('test-type').setFormat('string').setContent({ value: 'hello' });
 		should.equal(dp1.format, 'string');
 		should.equal(dp1.type, 'test-type');
 		should.equal(dp1.content.value, 'hello');
 		done();
 	});
 
-	it('datapoints-10 - Stringify', (done) => {
+	it('datapoints-15 - Generate', (done) => {
+		const dp1 = new Datapoint().setType('test-type').setFormat('string').setContent({ value: 'hello' });
+		dp1.setCustomPermissions('lalala');
+		dp1.setParent('mother');
+		const dat = dp1.generate();
+		should.equal(typeof dat, 'object');
+		done();
+	});
+
+	it('datapoints-16a - Fail generate: missing type', (done) => {
+		const dp1 = new Datapoint().setFormat('string').setContent({ value: 'hello' });
+		dp1.setCustomPermissions('lalala');
+		dp1.setParent('mother');
+		should(() => { dp1.generate(); }).throwError();
+		done();
+	});
+
+	it('datapoints-16b - Fail generate: missing format/value', (done) => {
+		const dp1 = new Datapoint().setType('test-type');
+		dp1.setCustomPermissions('lalala');
+		dp1.setParent('mother');
+		should(() => { dp1.generate(); }).throwError();
+		done();
+	});
+
+	it('datapoints-16c - Fail generate: missing permissions', (done) => {
+		const dp1 = new Datapoint().setType('test-type').setFormat('string').setContent({ value: 'hello' });
+		dp1.setParent('mother');
+		should(() => { dp1.generate(); }).throwError();
+		done();
+	});
+
+	it('datapoints-16d - Fail generate: missing parent', (done) => {
+		const dp1 = new Datapoint().setType('test-type').setFormat('string').setContent({ value: 'hello' });
+		dp1.setCustomPermissions('lalala');		
+		should(() => { dp1.generate(); }).throwError();
+		done();
+	});
+
+	it('datapoints-15 - Stringify', (done) => {
 		const dp1 = new Datapoint();
-		dp1.setType('test-type').setFormat('string').setValue('hello');
+		dp1.setType('test-type').setFormat('string').setContent({ value: 'hello' });
 		should.equal(typeof dp1.toString(), 'string');
 		done();
 	});
