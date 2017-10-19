@@ -37,37 +37,54 @@ class Datapoint {
 
 	// Getters ====================================
 
-	// Datapoint body
+	/**
+	 * The data stored in a Datapoint.
+	 */
 	get data() {
 		return this.body;
 	}
 
-	// Format of the value (string, number)
+	/**
+	 * The data type for the Datapoint's value.
+	 */
 	get format() {
 		return this.body.format;
 	}
 
-	// Datapoint type
+	/**
+	 * The type of Datapoint.
+	 */
 	get type() {
 		return this.body.type;
 	}
 
-	// Content JSON
+	/**
+	 * The content of the Datapoint.
+	 */
 	get content() {
 		return this.body.content;
 	}
 
+	/**
+	 * The parent of this Datapoint.
+	 */
 	get parent() {
 		return this.body.parent;
 	}
 
+	/**
+	 * Permissions associated with this Datapoint.
+	 */
 	get permissions() {
 		return this.body.permissions;
 	}
 
 	// Setters ====================================
 
-	// Set the type
+	/**
+	 * Set the type of the Datapoint.
+	 * @param {string} type must be a valid string.
+	 */
 	setType(type) {
 		if (typeof type === 'string') {
 			this.body.type = type;
@@ -77,7 +94,10 @@ class Datapoint {
 		throw Error(typeErr);
 	}
 
-	// Set the format
+	/**
+	 * 
+	 * @param {*} format 
+	 */
 	setFormat(format) {
 		if (typeof format === 'string') {
 			this.body.format = format;
