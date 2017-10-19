@@ -14,6 +14,9 @@ function checkType(input) {
 	return input instanceof Datapoint || input instanceof Object;
 }
 
+/**
+ * TaskOutput collects datapoints, notifications, and assignments into one object.
+ */
 class TaskOutput {
 	constructor() {
 		// Initialize empty arrays for values
@@ -24,27 +27,40 @@ class TaskOutput {
 
 	// Setters ====================================
 
-	// Add a datapoint
+	/**
+	 * Add a datapoint
+	 * @param {*} dpt Datapoint instance or JSON object
+	 */
 	addDatapoint(dpt) {
 		if (checkDatapointType(dpt)) this.datapoints.push(dpt);
 		else throw Error('Input must be JSON or Datapoint object.');
 		return this;
 	}
 
-	// Add a datapoint
+	/**
+	 * Add a notification to the task output.
+	 * @param {object} notif
+	 */
 	addNotification(notif) {
 		if (checkType(notif)) this.notifications.push(notif);
 		else throw Error('Input must be JSON object.');
 		return this;
 	}
 
-	// Add a datapoint
+	/**
+	 * Add an assignment to the task output.
+	 * @param {object} assn
+	 */
 	addAssignment(assn) {
 		if (checkType(assn)) this.assignments.push(assn);
 		else throw Error('Input must be JSON object.');
 		return this;
 	}
 
+	/**
+	 * Generate an object collecting datapoints, notifications, and assignments.
+	 * For any datapoints, validate it's fields and generate a JSON.
+	 */
 	generate() {
 		const output = {
 			datapoints: [],
@@ -58,7 +74,9 @@ class TaskOutput {
 		return output;
 	}
 
-	// Convert task output to string
+	/**
+	 * Convert the task output to a string.
+	 */
 	toString() {
 		return JSON.stringify(this.generate());
 	}
