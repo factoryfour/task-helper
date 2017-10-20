@@ -136,6 +136,7 @@ class Datapoint {
 	// Set the parent
 	setParent(parent) {
 		this.body.parent = parent;
+		return this;
 	}
 
 	// Set custom permissions
@@ -181,7 +182,7 @@ class Datapoint {
 	// Check that all fields have been set, and if so, return JSON of data
 	generate() {
 		const myBody = this.body;
-		['type', 'format', 'content', 'parent', 'permissions'].forEach((fieldName) => {
+		['type', 'format', 'content', 'parent'].forEach((fieldName) => {
 			if (!myBody[fieldName]) {
 				throw Error(`Missing a field: ${fieldName}`);
 			}
