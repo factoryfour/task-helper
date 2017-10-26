@@ -39,7 +39,7 @@ class TaskOutput {
 
 	/**
 	 * Add a notification to the task output.
-	 * @param {object} notif
+	 * @param {object} notif Notification JSON object.
 	 */
 	addNotification(notif) {
 		if (checkType(notif)) this.notifications.push(notif);
@@ -49,7 +49,7 @@ class TaskOutput {
 
 	/**
 	 * Add an assignment to the task output.
-	 * @param {object} assn
+	 * @param {object} assn Assignment JSON object.
 	 */
 	addAssignment(assn) {
 		if (checkType(assn)) this.assignments.push(assn);

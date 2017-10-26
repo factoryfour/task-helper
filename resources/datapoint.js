@@ -95,8 +95,8 @@ class Datapoint {
 	}
 
 	/**
-	 * 
-	 * @param {*} format 
+	 * Set the format of the Datapoint.
+	 * @param {string} format must be a valid string.
 	 */
 	setFormat(format) {
 		if (typeof format === 'string') {
@@ -107,7 +107,10 @@ class Datapoint {
 		throw Error(typeErr);
 	}
 
-	// Set the value
+	/**
+	 * Set the content of a datapoint.
+	 * @param {*} content any value. If object, must have 'value' field.
+	 */
 	setContent(content) {
 		// Make sure we have an object with a value field
 		let contentObj = {};
@@ -133,20 +136,31 @@ class Datapoint {
 		return this;
 	}
 
-	// Set the parent
+	/**
+	 * Set the parent field.
+	 * @param {*} parent
+	 */
 	setParent(parent) {
 		this.body.parent = parent;
 		return this;
 	}
 
-	// Set custom permissions
+	/**
+	 * Set custom permissions.
+	 * @param {*} perms custom permissions object
+	 * @param {boolean} override set as true to override existing permissions
+	 */
 	setCustomPermissions(perms, override) {
 		if (!checkPermissionsOverride(this, override)) throw Error('This datapoint already has permissions. Override option not specified.');
 		this.body.permissions = perms;
 		return this;
 	}
 
-	// Set permissions with object
+	/**
+	 * Assign permissions using standard format: GET, PUT, and DELETE.
+	 * @param {object} perms permissions JSON. Must have GET, PUT, or DELETE fields.
+	 * @param {boolean} override set as true to override existing permissions
+	 */
 	setPermissions(perms, override) {
 		if (!checkPermissionsOverride(this, override)) throw Error('This datapoint already has permissions. Override option not specified.');
 		if ((typeof perms != 'object') && (!perms.GET && !perms.PUT && !perms.DELETE)) {
@@ -162,7 +176,11 @@ class Datapoint {
 		return this;
 	}
 
-	// Add a permission
+	/**
+	 * Add a new permission.
+	 * @param {string} type GET, PUT, or DELETE
+	 * @param {*} perm who shoudld recieve the permission?
+	 */
 	addPermission(type, perm) {
 		if (['GET', 'PUT', 'DELETE'].indexOf(type) < 0) {
 			throw Error('Permission must be of type GET, PUT, or DELETE. Otherwise, use setCustomPermissions');
@@ -179,7 +197,9 @@ class Datapoint {
 		return this;
 	}
 
-	// Check that all fields have been set, and if so, return JSON of data
+	/**
+	 * Check for missing fields and generate a JSON object of the datapoint.
+	 */
 	generate() {
 		const myBody = this.body;
 		['type', 'format', 'content', 'parent'].forEach((fieldName) => {
@@ -190,7 +210,9 @@ class Datapoint {
 		return this.body;
 	}
 
-	// Convert datapoint to string
+	/**
+	 * Convert the datapoint to a string.
+	 */
 	toString() {
 		return JSON.stringify(this.data);
 	}
