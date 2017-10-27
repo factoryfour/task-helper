@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../">
+  <title data-ice="title">Manual | @factoryfour/task-helper</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Helper classes for task output and datapoints"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@factoryfour/task-helper"><meta property="twitter:description" content="Helper classes for task output and datapoints"></head>
+<body class="layout-container manual-root" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/factoryfour/task-helper"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div class="manual-toc-root">
+  
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/manual_dp.html"><a href="manual/manual_dp.html" data-ice="link">Datapoints</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/manual_dp.html"><a href="manual/manual_dp.html#initialization" data-ice="link">Initialization</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/manual_dp.html"><a href="manual/manual_dp.html#set-content" data-ice="link">Set content</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/manual_dp.html"><a href="manual/manual_dp.html#set-permissions" data-ice="link">Set permissions</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/manual_dp.html"><a href="manual/manual_dp.html#chain-commands" data-ice="link">Chain commands</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/manual_dp.html"><a href="manual/manual_dp.html#generate-a-datapoint" data-ice="link">Generate a Datapoint</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/manual_to.html"><a href="manual/manual_to.html" data-ice="link">TaskOutput</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/manual_to.html"><a href="manual/manual_to.html#initialization" data-ice="link">Initialization</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/manual_to.html"><a href="manual/manual_to.html#add-datapoints" data-ice="link">Add Datapoints</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/manual_to.html"><a href="manual/manual_to.html#add-notifications" data-ice="link">Add notifications</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/manual_to.html"><a href="manual/manual_to.html#add-assignments" data-ice="link">Add assignments</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/manual_to.html"><a href="manual/manual_to.html#generate-a-taskoutput-object" data-ice="link">Generate a TaskOutput object</a></li>
+</ul>
+  </div>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div class="github-markdown" data-ice="content"><h1 id="taskoutput">TaskOutput</h1><h2 id="initialization">Initialization</h2><p>Initialize a TaskOutput object:</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">const tout = new TaskOutput();</code>
+</code></pre>
+<h2 id="add-datapoints">Add Datapoints</h2><p>The type of content must match the Datapoint&apos;s format.</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">// Create a Datapoint
+const dp1 = new Datapoint();
+dp1.setFormat(&apos;string&apos;);
+dp1.setContent({ title: &apos;a_number&apos;, value: &apos;fifty-two&apos; });
+
+// Add the Datapoint to the TaskOutput
+const tout = new TaskOutput();
+tout.addDatapoint(dp1);</code>
+</code></pre>
+<h2 id="add-notifications">Add notifications</h2><pre><code class="lang-js"><code class="source-code prettyprint">const tout = new TaskOutput();
+const nt1 = { value: &apos;hello&apos; };
+const nt2 = { value: &apos;world&apos; };
+tout.addNotification(nt1).addNotification(nt2);</code>
+</code></pre>
+<h2 id="add-assignments">Add assignments</h2><pre><code class="lang-js"><code class="source-code prettyprint">const tout = new TaskOutput();
+const as1 = { value: &apos;goodnight&apos; };
+const as2 = { value: &apos;moon&apos; };
+tout.addAssignment(as1).addAssignment(as2);</code>
+</code></pre>
+<h2 id="generate-a-taskoutput-object">Generate a TaskOutput object</h2><p>The <code>generate()</code> function validates a TaskOutput and returns its data. </p>
+<pre><code class="lang-js"><code class="source-code prettyprint">// Sample Datapoint
+const dp1 = new Datapoint(&apos;sample-type&apos;, &apos;string&apos;).setContent({ value: &apos;hello&apos; });
+dp1.addPermission(&apos;GET&apos;, &apos;bruce&apos;)
+    .addPermission(&apos;PUT&apos;, &apos;clark&apos;)
+    .addPermission(&apos;DELETE&apos;, &apos;diana&apos;);
+dp1.setParent(&apos;DC52&apos;);
+
+// Sample notifications
+const nt1 = { value: &apos;hello&apos; };
+const nt2 = { value: &apos;world&apos; };
+
+// Sample assignments
+const as1 = { value: &apos;goodnight&apos; };
+const as2 = { value: &apos;moon&apos; };
+
+// Add them all to a TaskOutput object. Note that commands can be chained for readibility and ease of use.
+const tout = new TaskOutput();
+// Datapoints can be added using either the Datapoint object or just the data
+tout.addDatapoint(dp1).addDatapoint(dp1.data);
+tout.addNotification(nt1).addNotification(nt2);
+tout.addAssignment(as1).addAssignment(as2);
+
+// Generate to validate fields and return the data
+const myTaskOutput = tout.generate();</code>
+</code></pre>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

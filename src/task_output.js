@@ -4,24 +4,49 @@ vars-on-top: 'off',
 no-var: off
 */
 
+/**
+ * @ignore
+ * Import the Datapoint class.
+ */
 const Datapoint = require('./datapoint');
 
+/**
+ * @ignore
+ * Check if an object is a Datapoint or JSON object.
+ * @param {*} input - object to validate.
+ */
 function checkDatapointType(input) {
 	return input instanceof Datapoint || input instanceof Object;
 }
 
+/**
+ * @ignore
+ * Check if an object is a JSON object.
+ * @param {*} input - object to validate.
+ */
 function checkType(input) {
-	return input instanceof Datapoint || input instanceof Object;
+	return input instanceof Object;
 }
 
 /**
  * TaskOutput collects datapoints, notifications, and assignments into one object.
  */
 class TaskOutput {
+	/**
+	 * TaskOutput collects datapoints, notifications, and assignments into one object.
+	 */
 	constructor() {
-		// Initialize empty arrays for values
+		/**
+		 * Store Datapoints in an array.
+		 */
 		this.datapoints = [];
+		/**
+		 * Store Notifications in an array.
+		 */
 		this.notifications = [];
+		/**
+		 * Store assignments in an array.
+		 */
 		this.assignments = [];
 	}
 
@@ -29,7 +54,8 @@ class TaskOutput {
 
 	/**
 	 * Add a datapoint
-	 * @param {*} dpt Datapoint instance or JSON object
+	 * @param {*} dpt - Datapoint instance or JSON object.
+	 * @returns {TaskOutput} this TaskOutput object.
 	 */
 	addDatapoint(dpt) {
 		if (checkDatapointType(dpt)) this.datapoints.push(dpt);
@@ -39,7 +65,8 @@ class TaskOutput {
 
 	/**
 	 * Add a notification to the task output.
-	 * @param {object} notif
+	 * @param {object} notif - Notification JSON object.
+	 * @returns {TaskOutput} this TaskOutput object.
 	 */
 	addNotification(notif) {
 		if (checkType(notif)) this.notifications.push(notif);
@@ -49,7 +76,8 @@ class TaskOutput {
 
 	/**
 	 * Add an assignment to the task output.
-	 * @param {object} assn
+	 * @param {object} assn - Assignment JSON object.
+	 * @returns {TaskOutput} this TaskOutput object.
 	 */
 	addAssignment(assn) {
 		if (checkType(assn)) this.assignments.push(assn);
@@ -60,6 +88,7 @@ class TaskOutput {
 	/**
 	 * Generate an object collecting datapoints, notifications, and assignments.
 	 * For any datapoints, validate it's fields and generate a JSON.
+	 * @returns {object} this TaskOutput object's data.
 	 */
 	generate() {
 		const output = {
@@ -76,6 +105,7 @@ class TaskOutput {
 
 	/**
 	 * Convert the task output to a string.
+	 * @returns {string} string representation of this TaskOutput object's data.
 	 */
 	toString() {
 		return JSON.stringify(this.generate());

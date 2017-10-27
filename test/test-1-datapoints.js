@@ -197,19 +197,13 @@ test('datapoints-16b - Fail generate: missing format/value', (t) => {
 	t.throws(() => { dp1.generate(); });
 });
 
-test('datapoints-16c - Fail generate: missing permissions', (t) => {
-	const dp1 = new Datapoint().setType('test-type').setFormat('string').setContent({ value: 'hello' });
-	dp1.setParent('mother');
-	t.throws(() => { dp1.generate(); });
-});
-
-test('datapoints-16d - Fail generate: missing parent', (t) => {
+test('datapoints-16c - Fail generate: missing parent', (t) => {
 	const dp1 = new Datapoint().setType('test-type').setFormat('string').setContent({ value: 'hello' });
 	dp1.setCustomPermissions('lalala');
 	t.throws(() => { dp1.generate(); });
 });
 
-test('datapoints-15 - Stringify', (t) => {
+test('datapoints-17 - Stringify', (t) => {
 	const dp1 = new Datapoint();
 	dp1.setType('test-type').setFormat('string').setContent({ value: 'hello' });
 	t.true(typeof dp1.toString() == 'string');
