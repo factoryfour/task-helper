@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../">
+  <title data-ice="title">Manual | @factoryfour/task-helper</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Helper classes for task output and datapoints"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@factoryfour/task-helper"><meta property="twitter:description" content="Helper classes for task output and datapoints"></head>
+<body class="layout-container manual-root" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/factoryfour/task-helper"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div class="manual-toc-root">
+  
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/manual_dp.html"><a href="manual/manual_dp.html" data-ice="link">Datapoints</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/manual_dp.html"><a href="manual/manual_dp.html#initialization" data-ice="link">Initialization</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/manual_dp.html"><a href="manual/manual_dp.html#set-content" data-ice="link">Set content</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/manual_dp.html"><a href="manual/manual_dp.html#set-permissions" data-ice="link">Set permissions</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/manual_dp.html"><a href="manual/manual_dp.html#chain-commands" data-ice="link">Chain commands</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/manual_dp.html"><a href="manual/manual_dp.html#generate-a-datapoint" data-ice="link">Generate a Datapoint</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/manual_to.html"><a href="manual/manual_to.html" data-ice="link">TaskOutput</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/manual_to.html"><a href="manual/manual_to.html#initialization" data-ice="link">Initialization</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/manual_to.html"><a href="manual/manual_to.html#add-datapoints" data-ice="link">Add Datapoints</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/manual_to.html"><a href="manual/manual_to.html#add-notifications" data-ice="link">Add notifications</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/manual_to.html"><a href="manual/manual_to.html#add-assignments" data-ice="link">Add assignments</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/manual_to.html"><a href="manual/manual_to.html#generate-a-taskoutput-object" data-ice="link">Generate a TaskOutput object</a></li>
+</ul>
+  </div>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div class="github-markdown" data-ice="content"><h1 id="datapoints">Datapoints</h1><h2 id="initialization">Initialization</h2><p>Initialize a Datapoint, either empty, or with a type or format:</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">// An empty Datapoint
+const dp1 = new Datapoint();
+
+// A Datapoint with a type
+const dp2 = new Datapoint(&apos;sample-type&apos;);
+
+// A Datapoint with a type and format
+const dp3 = new Datapoint(&apos;sample-type&apos;, &apos;string&apos;);</code>
+</code></pre>
+<p>Set type and format fields in a Datapoint</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">const dp1 = new Datapoint();
+dp1.setType(&apos;sample-type&apos;);
+dp1.setFormat(&apos;string&apos;);</code>
+</code></pre>
+<h2 id="set-content">Set content</h2><p>Content must match the Datapoint&apos;s format</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">// Set content as a JSON
+const dp1 = new Datapoint();
+dp1.setFormat(&apos;string&apos;);
+dp1.setContent({ title: &apos;a_number&apos;, value: &apos;fifty-two&apos; });
+
+// Set content with a string value
+const dp2 = new Datapoint();
+dp2.setFormat(&apos;string&apos;);
+dp2.setContent(&apos;fifty-two&apos;);
+
+// Set content with a number value
+const dp3 = new Datapoint();
+dp3.setFormat(&apos;number&apos;);
+dp3.setContent(52);</code>
+</code></pre>
+<h2 id="set-permissions">Set permissions</h2><p>Standard permissions have GET, PUT, and DELETE parameters. They can be set at once or added one at a time.</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">// Set all permissions at once
+const newPerms = {
+    GET: [&apos;bruce&apos;],
+    PUT: [&apos;clark&apos;],
+    DELETE: [&apos;diana&apos;]
+};
+const dp1 = new Datapoint();
+dp1.setPermissions(newPerms);
+
+// Add permissions one at a time
+const dp2 = new Datapoint();
+dp2.addPermission(&apos;GET&apos;, &apos;bruce&apos;);
+dp2.addPermission(&apos;PUT&apos;, &apos;clark&apos;);
+dp2.addPermission(&apos;DELETE&apos;, &apos;diana&apos;);</code>
+</code></pre>
+<p>Custom permissions can take any format:</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">const dp1 = new Datapoint();
+dp1.setCustomPermissions(&apos;my-custom-permissions&apos;);</code>
+</code></pre>
+<h2 id="chain-commands">Chain commands</h2><p>You can chain functions for readability:</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">const dp1 = new Datapoint().setType(&apos;sample-type&apos;).setFormat(&apos;string&apos;).setContent(&apos;fifty-two&apos;);</code>
+</code></pre>
+<h2 id="generate-a-datapoint">Generate a Datapoint</h2><p>The <code>generate()</code> function validates a Datapoint and returns its data.</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">const dp1 = new Datapoint(&apos;sample-type&apos;, &apos;string&apos;).setContent({ value: &apos;hello&apos; });
+dp1.addPermission(&apos;GET&apos;, &apos;bruce&apos;)
+    .addPermission(&apos;PUT&apos;, &apos;clark&apos;)
+    .addPermission(&apos;DELETE&apos;, &apos;diana&apos;);
+dp1.setParent(&apos;DC52&apos;);
+
+const mydata = dp1.generate();</code>
+</code></pre>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

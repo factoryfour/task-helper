@@ -1,5 +1,5 @@
-const dpts = require('./resources/datapoint.js');
-const tout = require('./resources/task_output.js');
+const dpts = require('./src/datapoint.js');
+const tout = require('./src/task_output.js');
 
 module.exports = {
 	Datapoint: dpts,

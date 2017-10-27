@@ -2,6 +2,12 @@
 valid-typeof: 'off'
 */
 
+/**
+ * @ignore
+ * Check if override flag is valid.
+ * @param {Datapoint} dpt - Datapoint object.
+ * @param {boolean} override - Override flag.
+ */
 function checkPermissionsOverride(dpt, override) {
 	const ovr = override || false;
 	if (dpt.body.permissions && !ovr) {
@@ -10,7 +16,15 @@ function checkPermissionsOverride(dpt, override) {
 	return true;
 }
 
+/**
+ * Datapoints contain any type of data produced by an action.
+ */
 class Datapoint {
+	/**
+	 * Datapoints contain any type of data produced by an action.
+	 * @param {string} type - What kind of Datapoint is this?
+	 * @param {string} format - What type of value does this Datapoint store? ('string' or 'number')
+	 */
 	constructor(type, format) {
 		// Initialize the body property
 		const body = {};
@@ -19,8 +33,10 @@ class Datapoint {
 			configurable: false,
 			writable: false
 		});
+		/**
+		 * Declare empty JSON as body to store values
+		 */
 		this.body = body;
-		// Declare empty JSON as body to store values
 		this.body.type = null;
 		this.body.format = null;
 		this.body.content = {
@@ -29,6 +45,7 @@ class Datapoint {
 		};
 		this.body.parent = null;
 		this.body.permissions = null;
+
 		// Add type (if provided)
 		if (type) this.setType(type);
 		// Add format (if provided)
@@ -83,7 +100,8 @@ class Datapoint {
 
 	/**
 	 * Set the type of the Datapoint.
-	 * @param {string} type must be a valid string.
+	 * @param {string} type - What kind of Datapoint is this?
+	 * @returns {Datapoint} this Datapoint
 	 */
 	setType(type) {
 		if (typeof type === 'string') {
@@ -96,7 +114,8 @@ class Datapoint {
 
 	/**
 	 * Set the format of the Datapoint.
-	 * @param {string} format must be a valid string.
+	 * @param {string} format - What type of value does this Datapoint hold?
+	 * @returns {Datapoint} this Datapoint
 	 */
 	setFormat(format) {
 		if (typeof format === 'string') {
@@ -109,7 +128,8 @@ class Datapoint {
 
 	/**
 	 * Set the content of a datapoint.
-	 * @param {*} content any value. If object, must have 'value' field.
+	 * @param {*} content - The value of the Datapoint. If object, must have 'value' field.
+	 * @returns {Datapoint} this Datapoint
 	 */
 	setContent(content) {
 		// Make sure we have an object with a value field
@@ -138,7 +158,8 @@ class Datapoint {
 
 	/**
 	 * Set the parent field.
-	 * @param {*} parent
+	 * @param {*} parent - The parent of this process.
+	 * @returns {Datapoint} this Datapoint
 	 */
 	setParent(parent) {
 		this.body.parent = parent;
@@ -147,8 +168,9 @@ class Datapoint {
 
 	/**
 	 * Set custom permissions.
-	 * @param {*} perms custom permissions object
-	 * @param {boolean} override set as true to override existing permissions
+	 * @param {*} perms - Custom permissions object.
+	 * @param {boolean} override - Set as true to override existing permissions.
+	 * @returns {Datapoint} this Datapoint
 	 */
 	setCustomPermissions(perms, override) {
 		if (!checkPermissionsOverride(this, override)) throw Error('This datapoint already has permissions. Override option not specified.');
@@ -158,8 +180,9 @@ class Datapoint {
 
 	/**
 	 * Assign permissions using standard format: GET, PUT, and DELETE.
-	 * @param {object} perms permissions JSON. Must have GET, PUT, or DELETE fields.
-	 * @param {boolean} override set as true to override existing permissions
+	 * @param {object} perms - Permissions JSON. Must have GET, PUT, or DELETE fields.
+	 * @param {boolean} override - Set as true to override existing permissions
+	 * @returns {Datapoint} this Datapoint
 	 */
 	setPermissions(perms, override) {
 		if (!checkPermissionsOverride(this, override)) throw Error('This datapoint already has permissions. Override option not specified.');
@@ -168,7 +191,6 @@ class Datapoint {
 		}
 		// Add the permission
 		if (this.body.permissions && typeof this.body.permissions == 'object') {
-			console.log(this.body.permissions);
 			this.body.permissions = Object.assign(this.body.permissions, perms);
 		} else {
 			this.body.permissions = perms;
@@ -178,8 +200,9 @@ class Datapoint {
 
 	/**
 	 * Add a new permission.
-	 * @param {string} type GET, PUT, or DELETE
-	 * @param {*} perm who shoudld recieve the permission?
+	 * @param {string} type - 'GET', 'PUT', or 'DELETE'
+	 * @param {*} perm - Who shoudld receive the permission?
+	 * @returns {Datapoint} this Datapoint
 	 */
 	addPermission(type, perm) {
 		if (['GET', 'PUT', 'DELETE'].indexOf(type) < 0) {
@@ -199,6 +222,7 @@ class Datapoint {
 
 	/**
 	 * Check for missing fields and generate a JSON object of the datapoint.
+	 * @returns {object} this Datapoint's data
 	 */
 	generate() {
 		const myBody = this.body;
@@ -212,6 +236,7 @@ class Datapoint {
 
 	/**
 	 * Convert the datapoint to a string.
+	 * @returns {string} string representation of this Datapoint's data
 	 */
 	toString() {
 		return JSON.stringify(this.data);

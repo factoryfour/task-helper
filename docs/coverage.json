@@ -1,0 +1,17 @@
+{
+  "coverage": "100%",
+  "expectCount": 32,
+  "actualCount": 32,
+  "files": {
+    "src/datapoint.js": {
+      "expectCount": 19,
+      "actualCount": 19,
+      "undocumentLines": []
+    },
+    "src/task_output.js": {
+      "expectCount": 13,
+      "actualCount": 13,
+      "undocumentLines": []
+    }
+  }
+}

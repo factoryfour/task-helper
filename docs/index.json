@@ -1,0 +1,1542 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/datapoint.js",
+    "content": "/* eslint\nvalid-typeof: 'off'\n*/\n\n/**\n * @ignore\n * Check if override flag is valid.\n * @param {Datapoint} dpt - Datapoint object.\n * @param {boolean} override - Override flag.\n */\nfunction checkPermissionsOverride(dpt, override) {\n\tconst ovr = override || false;\n\tif (dpt.body.permissions && !ovr) {\n\t\treturn false;\n\t}\n\treturn true;\n}\n\n/**\n * Datapoints contain any type of data produced by an action.\n */\nclass Datapoint {\n\t/**\n\t * Datapoints contain any type of data produced by an action.\n\t * @param {string} type - What kind of Datapoint is this?\n\t * @param {string} format - What type of value does this Datapoint store? ('string' or 'number')\n\t */\n\tconstructor(type, format) {\n\t\t// Initialize the body property\n\t\tconst body = {};\n\t\tObject.defineProperty(body, 'body', {\n\t\t\tenumerable: false,\n\t\t\tconfigurable: false,\n\t\t\twritable: false\n\t\t});\n\t\t/**\n\t\t * Declare empty JSON as body to store values\n\t\t */\n\t\tthis.body = body;\n\t\tthis.body.type = null;\n\t\tthis.body.format = null;\n\t\tthis.body.content = {\n\t\t\tvalue: null,\n\t\t\ttitle: null\n\t\t};\n\t\tthis.body.parent = null;\n\t\tthis.body.permissions = null;\n\n\t\t// Add type (if provided)\n\t\tif (type) this.setType(type);\n\t\t// Add format (if provided)\n\t\tif (format) this.setFormat(format);\n\t}\n\n\t// Getters ====================================\n\n\t/**\n\t * The data stored in a Datapoint.\n\t */\n\tget data() {\n\t\treturn this.body;\n\t}\n\n\t/**\n\t * The data type for the Datapoint's value.\n\t */\n\tget format() {\n\t\treturn this.body.format;\n\t}\n\n\t/**\n\t * The type of Datapoint.\n\t */\n\tget type() {\n\t\treturn this.body.type;\n\t}\n\n\t/**\n\t * The content of the Datapoint.\n\t */\n\tget content() {\n\t\treturn this.body.content;\n\t}\n\n\t/**\n\t * The parent of this Datapoint.\n\t */\n\tget parent() {\n\t\treturn this.body.parent;\n\t}\n\n\t/**\n\t * Permissions associated with this Datapoint.\n\t */\n\tget permissions() {\n\t\treturn this.body.permissions;\n\t}\n\n\t// Setters ====================================\n\n\t/**\n\t * Set the type of the Datapoint.\n\t * @param {string} type - What kind of Datapoint is this?\n\t * @returns {Datapoint} this Datapoint\n\t */\n\tsetType(type) {\n\t\tif (typeof type === 'string') {\n\t\t\tthis.body.type = type;\n\t\t\treturn this;\n\t\t}\n\t\tconst typeErr = 'Type must be a valid string';\n\t\tthrow Error(typeErr);\n\t}\n\n\t/**\n\t * Set the format of the Datapoint.\n\t * @param {string} format - What type of value does this Datapoint hold?\n\t * @returns {Datapoint} this Datapoint\n\t */\n\tsetFormat(format) {\n\t\tif (typeof format === 'string') {\n\t\t\tthis.body.format = format;\n\t\t\treturn this;\n\t\t}\n\t\tconst typeErr = 'Type must be a valid string representing a type (string, number)';\n\t\tthrow Error(typeErr);\n\t}\n\n\t/**\n\t * Set the content of a datapoint.\n\t * @param {*} content - The value of the Datapoint. If object, must have 'value' field.\n\t * @returns {Datapoint} this Datapoint\n\t */\n\tsetContent(content) {\n\t\t// Make sure we have an object with a value field\n\t\tlet contentObj = {};\n\t\tif (typeof content == 'object') {\n\t\t\tif (!content.value) {\n\t\t\t\tconst fmtError = 'Must provide object with value';\n\t\t\t\tthrow TypeError(fmtError);\n\t\t\t}\n\t\t\tcontentObj = Object.assign(contentObj, content);\n\t\t} else {\n\t\t\tcontentObj.value = content;\n\t\t}\n\t\t// Check format\n\t\tif (!this.body.format) {\n\t\t\tconst fmtError = 'Datapoint does not have a format specified.';\n\t\t\tthrow Error(fmtError);\n\t\t} else if (typeof contentObj.value != this.body.format) {\n\t\t\tconst fmtError = `Value type must match format: ${this.body.format}`;\n\t\t\tthrow TypeError(fmtError);\n\t\t}\n\t\t// Assign to datapoint\n\t\tthis.body.content = Object.assign(this.body.content, contentObj);\n\t\treturn this;\n\t}\n\n\t/**\n\t * Set the parent field.\n\t * @param {*} parent - The parent of this process.\n\t * @returns {Datapoint} this Datapoint\n\t */\n\tsetParent(parent) {\n\t\tthis.body.parent = parent;\n\t\treturn this;\n\t}\n\n\t/**\n\t * Set custom permissions.\n\t * @param {*} perms - Custom permissions object.\n\t * @param {boolean} override - Set as true to override existing permissions.\n\t * @returns {Datapoint} this Datapoint\n\t */\n\tsetCustomPermissions(perms, override) {\n\t\tif (!checkPermissionsOverride(this, override)) throw Error('This datapoint already has permissions. Override option not specified.');\n\t\tthis.body.permissions = perms;\n\t\treturn this;\n\t}\n\n\t/**\n\t * Assign permissions using standard format: GET, PUT, and DELETE.\n\t * @param {object} perms - Permissions JSON. Must have GET, PUT, or DELETE fields.\n\t * @param {boolean} override - Set as true to override existing permissions\n\t * @returns {Datapoint} this Datapoint\n\t */\n\tsetPermissions(perms, override) {\n\t\tif (!checkPermissionsOverride(this, override)) throw Error('This datapoint already has permissions. Override option not specified.');\n\t\tif ((typeof perms != 'object') && (!perms.GET && !perms.PUT && !perms.DELETE)) {\n\t\t\tthrow Error('Permissions have GET, PUT, and DELETE fields.');\n\t\t}\n\t\t// Add the permission\n\t\tif (this.body.permissions && typeof this.body.permissions == 'object') {\n\t\t\tthis.body.permissions = Object.assign(this.body.permissions, perms);\n\t\t} else {\n\t\t\tthis.body.permissions = perms;\n\t\t}\n\t\treturn this;\n\t}\n\n\t/**\n\t * Add a new permission.\n\t * @param {string} type - 'GET', 'PUT', or 'DELETE'\n\t * @param {*} perm - Who shoudld receive the permission?\n\t * @returns {Datapoint} this Datapoint\n\t */\n\taddPermission(type, perm) {\n\t\tif (['GET', 'PUT', 'DELETE'].indexOf(type) < 0) {\n\t\t\tthrow Error('Permission must be of type GET, PUT, or DELETE. Otherwise, use setCustomPermissions');\n\t\t}\n\t\t// If body doesnt have a permissions object, initialize it\n\t\tif (!this.body.permissions || typeof this.body.permissions != 'object') {\n\t\t\tthis.body.permissions = {\n\t\t\t\tGET: [],\n\t\t\t\tPUT: [],\n\t\t\t\tDELETE: []\n\t\t\t};\n\t\t}\n\t\tthis.body.permissions[type].push(perm);\n\t\treturn this;\n\t}\n\n\t/**\n\t * Check for missing fields and generate a JSON object of the datapoint.\n\t * @returns {object} this Datapoint's data\n\t */\n\tgenerate() {\n\t\tconst myBody = this.body;\n\t\t['type', 'format', 'content', 'parent'].forEach((fieldName) => {\n\t\t\tif (!myBody[fieldName]) {\n\t\t\t\tthrow Error(`Missing a field: ${fieldName}`);\n\t\t\t}\n\t\t});\n\t\treturn this.body;\n\t}\n\n\t/**\n\t * Convert the datapoint to a string.\n\t * @returns {string} string representation of this Datapoint's data\n\t */\n\ttoString() {\n\t\treturn JSON.stringify(this.data);\n\t}\n\n}\n\nmodule.exports = Datapoint;\n",
+    "static": true,
+    "longname": "C:/Users/Pranav/Documents/GitHub/factoryfour/task-helper/src/datapoint.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "function",
+    "name": "checkPermissionsOverride",
+    "memberof": "src/datapoint.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/datapoint.js~checkPermissionsOverride",
+    "access": "public",
+    "export": false,
+    "importPath": "@factoryfour/task-helper/src/datapoint.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 11,
+    "ignore": true,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Datapoint"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "dpt",
+        "description": "Datapoint object."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "override",
+        "description": "Override flag."
+      }
+    ],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 50,
+    "kind": "class",
+    "name": "Datapoint",
+    "memberof": "src/datapoint.js",
+    "static": true,
+    "longname": "src/datapoint.js~Datapoint",
+    "access": "public",
+    "export": false,
+    "importPath": "@factoryfour/task-helper/src/datapoint.js",
+    "importStyle": null,
+    "description": "Datapoints contain any type of data produced by an action.",
+    "lineNumber": 22,
+    "interface": false
+  },
+  {
+    "__docId__": 51,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/datapoint.js~Datapoint",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/datapoint.js~Datapoint#constructor",
+    "access": "public",
+    "description": "Datapoints contain any type of data produced by an action.",
+    "lineNumber": 28,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "What kind of Datapoint is this?"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "format",
+        "description": "What type of value does this Datapoint store? ('string' or 'number')"
+      }
+    ]
+  },
+  {
+    "__docId__": 52,
+    "kind": "member",
+    "name": "body",
+    "memberof": "src/datapoint.js~Datapoint",
+    "static": false,
+    "longname": "src/datapoint.js~Datapoint#body",
+    "access": "public",
+    "description": "Declare empty JSON as body to store values",
+    "lineNumber": 39,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 53,
+    "kind": "get",
+    "name": "data",
+    "memberof": "src/datapoint.js~Datapoint",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/datapoint.js~Datapoint#data",
+    "access": "public",
+    "description": "The data stored in a Datapoint.",
+    "lineNumber": 60,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "get",
+    "name": "format",
+    "memberof": "src/datapoint.js~Datapoint",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/datapoint.js~Datapoint#format",
+    "access": "public",
+    "description": "The data type for the Datapoint's value.",
+    "lineNumber": 67,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "get",
+    "name": "type",
+    "memberof": "src/datapoint.js~Datapoint",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/datapoint.js~Datapoint#type",
+    "access": "public",
+    "description": "The type of Datapoint.",
+    "lineNumber": 74,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "get",
+    "name": "content",
+    "memberof": "src/datapoint.js~Datapoint",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/datapoint.js~Datapoint#content",
+    "access": "public",
+    "description": "The content of the Datapoint.",
+    "lineNumber": 81,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "get",
+    "name": "parent",
+    "memberof": "src/datapoint.js~Datapoint",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/datapoint.js~Datapoint#parent",
+    "access": "public",
+    "description": "The parent of this Datapoint.",
+    "lineNumber": 88,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "get",
+    "name": "permissions",
+    "memberof": "src/datapoint.js~Datapoint",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/datapoint.js~Datapoint#permissions",
+    "access": "public",
+    "description": "Permissions associated with this Datapoint.",
+    "lineNumber": 95,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 59,
+    "kind": "method",
+    "name": "setType",
+    "memberof": "src/datapoint.js~Datapoint",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/datapoint.js~Datapoint#setType",
+    "access": "public",
+    "description": "Set the type of the Datapoint.",
+    "lineNumber": 106,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Datapoint} this Datapoint"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "What kind of Datapoint is this?"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Datapoint"
+      ],
+      "spread": false,
+      "description": "this Datapoint"
+    }
+  },
+  {
+    "__docId__": 60,
+    "kind": "method",
+    "name": "setFormat",
+    "memberof": "src/datapoint.js~Datapoint",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/datapoint.js~Datapoint#setFormat",
+    "access": "public",
+    "description": "Set the format of the Datapoint.",
+    "lineNumber": 120,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Datapoint} this Datapoint"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "format",
+        "description": "What type of value does this Datapoint hold?"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Datapoint"
+      ],
+      "spread": false,
+      "description": "this Datapoint"
+    }
+  },
+  {
+    "__docId__": 61,
+    "kind": "method",
+    "name": "setContent",
+    "memberof": "src/datapoint.js~Datapoint",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/datapoint.js~Datapoint#setContent",
+    "access": "public",
+    "description": "Set the content of a datapoint.",
+    "lineNumber": 134,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Datapoint} this Datapoint"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "content",
+        "description": "The value of the Datapoint. If object, must have 'value' field."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Datapoint"
+      ],
+      "spread": false,
+      "description": "this Datapoint"
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "method",
+    "name": "setParent",
+    "memberof": "src/datapoint.js~Datapoint",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/datapoint.js~Datapoint#setParent",
+    "access": "public",
+    "description": "Set the parent field.",
+    "lineNumber": 164,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Datapoint} this Datapoint"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "parent",
+        "description": "The parent of this process."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Datapoint"
+      ],
+      "spread": false,
+      "description": "this Datapoint"
+    }
+  },
+  {
+    "__docId__": 63,
+    "kind": "method",
+    "name": "setCustomPermissions",
+    "memberof": "src/datapoint.js~Datapoint",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/datapoint.js~Datapoint#setCustomPermissions",
+    "access": "public",
+    "description": "Set custom permissions.",
+    "lineNumber": 175,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Datapoint} this Datapoint"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "perms",
+        "description": "Custom permissions object."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "override",
+        "description": "Set as true to override existing permissions."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Datapoint"
+      ],
+      "spread": false,
+      "description": "this Datapoint"
+    }
+  },
+  {
+    "__docId__": 64,
+    "kind": "method",
+    "name": "setPermissions",
+    "memberof": "src/datapoint.js~Datapoint",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/datapoint.js~Datapoint#setPermissions",
+    "access": "public",
+    "description": "Assign permissions using standard format: GET, PUT, and DELETE.",
+    "lineNumber": 187,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Datapoint} this Datapoint"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "perms",
+        "description": "Permissions JSON. Must have GET, PUT, or DELETE fields."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "override",
+        "description": "Set as true to override existing permissions"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Datapoint"
+      ],
+      "spread": false,
+      "description": "this Datapoint"
+    }
+  },
+  {
+    "__docId__": 65,
+    "kind": "method",
+    "name": "addPermission",
+    "memberof": "src/datapoint.js~Datapoint",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/datapoint.js~Datapoint#addPermission",
+    "access": "public",
+    "description": "Add a new permission.",
+    "lineNumber": 207,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Datapoint} this Datapoint"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "type",
+        "description": "'GET', 'PUT', or 'DELETE'"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "perm",
+        "description": "Who shoudld receive the permission?"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Datapoint"
+      ],
+      "spread": false,
+      "description": "this Datapoint"
+    }
+  },
+  {
+    "__docId__": 66,
+    "kind": "method",
+    "name": "generate",
+    "memberof": "src/datapoint.js~Datapoint",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/datapoint.js~Datapoint#generate",
+    "access": "public",
+    "description": "Check for missing fields and generate a JSON object of the datapoint.",
+    "lineNumber": 227,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{object} this Datapoint's data"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "object"
+      ],
+      "spread": false,
+      "description": "this Datapoint's data"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 67,
+    "kind": "method",
+    "name": "toString",
+    "memberof": "src/datapoint.js~Datapoint",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/datapoint.js~Datapoint#toString",
+    "access": "public",
+    "description": "Convert the datapoint to a string.",
+    "lineNumber": 241,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{string} string representation of this Datapoint's data"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": "string representation of this Datapoint's data"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 68,
+    "kind": "file",
+    "name": "src/task_output.js",
+    "content": "/* eslint\nvalid-typeof: 'off',\nvars-on-top: 'off',\nno-var: off\n*/\n\n/**\n * @ignore\n * Import the Datapoint class.\n */\nconst Datapoint = require('./datapoint');\n\n/**\n * @ignore\n * Check if an object is a Datapoint or JSON object.\n * @param {*} input - object to validate.\n */\nfunction checkDatapointType(input) {\n\treturn input instanceof Datapoint || input instanceof Object;\n}\n\n/**\n * @ignore\n * Check if an object is a JSON object.\n * @param {*} input - object to validate.\n */\nfunction checkType(input) {\n\treturn input instanceof Object;\n}\n\n/**\n * TaskOutput collects datapoints, notifications, and assignments into one object.\n */\nclass TaskOutput {\n\t/**\n\t * TaskOutput collects datapoints, notifications, and assignments into one object.\n\t */\n\tconstructor() {\n\t\t/**\n\t\t * Store Datapoints in an array.\n\t\t */\n\t\tthis.datapoints = [];\n\t\t/**\n\t\t * Store Notifications in an array.\n\t\t */\n\t\tthis.notifications = [];\n\t\t/**\n\t\t * Store assignments in an array.\n\t\t */\n\t\tthis.assignments = [];\n\t}\n\n\t// Setters ====================================\n\n\t/**\n\t * Add a datapoint\n\t * @param {*} dpt - Datapoint instance or JSON object.\n\t * @returns {TaskOutput} this TaskOutput object.\n\t */\n\taddDatapoint(dpt) {\n\t\tif (checkDatapointType(dpt)) this.datapoints.push(dpt);\n\t\telse throw Error('Input must be JSON or Datapoint object.');\n\t\treturn this;\n\t}\n\n\t/**\n\t * Add a notification to the task output.\n\t * @param {object} notif - Notification JSON object.\n\t * @returns {TaskOutput} this TaskOutput object.\n\t */\n\taddNotification(notif) {\n\t\tif (checkType(notif)) this.notifications.push(notif);\n\t\telse throw Error('Input must be JSON object.');\n\t\treturn this;\n\t}\n\n\t/**\n\t * Add an assignment to the task output.\n\t * @param {object} assn - Assignment JSON object.\n\t * @returns {TaskOutput} this TaskOutput object.\n\t */\n\taddAssignment(assn) {\n\t\tif (checkType(assn)) this.assignments.push(assn);\n\t\telse throw Error('Input must be JSON object.');\n\t\treturn this;\n\t}\n\n\t/**\n\t * Generate an object collecting datapoints, notifications, and assignments.\n\t * For any datapoints, validate it's fields and generate a JSON.\n\t * @returns {object} this TaskOutput object's data.\n\t */\n\tgenerate() {\n\t\tconst output = {\n\t\t\tdatapoints: [],\n\t\t\tnotifications: this.notifications,\n\t\t\tassignments: this.assignments\n\t\t};\n\t\t// Reformat datapoints if stored as an object\n\t\tthis.datapoints.forEach((dpt) => {\n\t\t\toutput.datapoints.push(dpt instanceof Datapoint ? dpt.generate() : dpt);\n\t\t});\n\t\treturn output;\n\t}\n\n\t/**\n\t * Convert the task output to a string.\n\t * @returns {string} string representation of this TaskOutput object's data.\n\t */\n\ttoString() {\n\t\treturn JSON.stringify(this.generate());\n\t}\n\n}\n\nmodule.exports = TaskOutput;\n",
+    "static": true,
+    "longname": "C:/Users/Pranav/Documents/GitHub/factoryfour/task-helper/src/task_output.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 69,
+    "kind": "variable",
+    "name": "Datapoint",
+    "memberof": "src/task_output.js",
+    "static": true,
+    "longname": "src/task_output.js~Datapoint",
+    "access": "public",
+    "export": false,
+    "importPath": "@factoryfour/task-helper/src/task_output.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 11,
+    "ignore": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 70,
+    "kind": "function",
+    "name": "checkDatapointType",
+    "memberof": "src/task_output.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/task_output.js~checkDatapointType",
+    "access": "public",
+    "export": false,
+    "importPath": "@factoryfour/task-helper/src/task_output.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 18,
+    "ignore": true,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "input",
+        "description": "object to validate."
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 71,
+    "kind": "function",
+    "name": "checkType",
+    "memberof": "src/task_output.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/task_output.js~checkType",
+    "access": "public",
+    "export": false,
+    "importPath": "@factoryfour/task-helper/src/task_output.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 27,
+    "ignore": true,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "input",
+        "description": "object to validate."
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 72,
+    "kind": "class",
+    "name": "TaskOutput",
+    "memberof": "src/task_output.js",
+    "static": true,
+    "longname": "src/task_output.js~TaskOutput",
+    "access": "public",
+    "export": false,
+    "importPath": "@factoryfour/task-helper/src/task_output.js",
+    "importStyle": null,
+    "description": "TaskOutput collects datapoints, notifications, and assignments into one object.",
+    "lineNumber": 34,
+    "interface": false
+  },
+  {
+    "__docId__": 73,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/task_output.js~TaskOutput",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/task_output.js~TaskOutput#constructor",
+    "access": "public",
+    "description": "TaskOutput collects datapoints, notifications, and assignments into one object.",
+    "lineNumber": 38
+  },
+  {
+    "__docId__": 74,
+    "kind": "member",
+    "name": "datapoints",
+    "memberof": "src/task_output.js~TaskOutput",
+    "static": false,
+    "longname": "src/task_output.js~TaskOutput#datapoints",
+    "access": "public",
+    "description": "Store Datapoints in an array.",
+    "lineNumber": 42,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 75,
+    "kind": "member",
+    "name": "notifications",
+    "memberof": "src/task_output.js~TaskOutput",
+    "static": false,
+    "longname": "src/task_output.js~TaskOutput#notifications",
+    "access": "public",
+    "description": "Store Notifications in an array.",
+    "lineNumber": 46,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 76,
+    "kind": "member",
+    "name": "assignments",
+    "memberof": "src/task_output.js~TaskOutput",
+    "static": false,
+    "longname": "src/task_output.js~TaskOutput#assignments",
+    "access": "public",
+    "description": "Store assignments in an array.",
+    "lineNumber": 50,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 77,
+    "kind": "method",
+    "name": "addDatapoint",
+    "memberof": "src/task_output.js~TaskOutput",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/task_output.js~TaskOutput#addDatapoint",
+    "access": "public",
+    "description": "Add a datapoint",
+    "lineNumber": 60,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{TaskOutput} this TaskOutput object."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "dpt",
+        "description": "Datapoint instance or JSON object."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "TaskOutput"
+      ],
+      "spread": false,
+      "description": "this TaskOutput object."
+    }
+  },
+  {
+    "__docId__": 78,
+    "kind": "method",
+    "name": "addNotification",
+    "memberof": "src/task_output.js~TaskOutput",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/task_output.js~TaskOutput#addNotification",
+    "access": "public",
+    "description": "Add a notification to the task output.",
+    "lineNumber": 71,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{TaskOutput} this TaskOutput object."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "notif",
+        "description": "Notification JSON object."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "TaskOutput"
+      ],
+      "spread": false,
+      "description": "this TaskOutput object."
+    }
+  },
+  {
+    "__docId__": 79,
+    "kind": "method",
+    "name": "addAssignment",
+    "memberof": "src/task_output.js~TaskOutput",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/task_output.js~TaskOutput#addAssignment",
+    "access": "public",
+    "description": "Add an assignment to the task output.",
+    "lineNumber": 82,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{TaskOutput} this TaskOutput object."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "assn",
+        "description": "Assignment JSON object."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "TaskOutput"
+      ],
+      "spread": false,
+      "description": "this TaskOutput object."
+    }
+  },
+  {
+    "__docId__": 80,
+    "kind": "method",
+    "name": "generate",
+    "memberof": "src/task_output.js~TaskOutput",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/task_output.js~TaskOutput#generate",
+    "access": "public",
+    "description": "Generate an object collecting datapoints, notifications, and assignments.\nFor any datapoints, validate it's fields and generate a JSON.",
+    "lineNumber": 93,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{object} this TaskOutput object's data."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "object"
+      ],
+      "spread": false,
+      "description": "this TaskOutput object's data."
+    },
+    "params": []
+  },
+  {
+    "__docId__": 81,
+    "kind": "method",
+    "name": "toString",
+    "memberof": "src/task_output.js~TaskOutput",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/task_output.js~TaskOutput#toString",
+    "access": "public",
+    "description": "Convert the task output to a string.",
+    "lineNumber": 110,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{string} string representation of this TaskOutput object's data."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": "string representation of this TaskOutput object's data."
+    },
+    "params": []
+  },
+  {
+    "kind": "index",
+    "content": "# task-helper\n\nThe `task-helper` library helps format webtask output.\n\n- **Manual**: Learn how to use Datapoints and TaskOutput data types with example code.\n- **Reference**: Documentation for classes.\n- **Source**: Source code for classes.\n",
+    "longname": "C:\\Users\\Pranav\\Documents\\GitHub\\factoryfour\\task-helper\\README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"@factoryfour/task-helper\",\n  \"version\": \"1.2.3\",\n  \"description\": \"Helper classes for task output and datapoints\",\n  \"engines\": {\n    \"node\": \"6.10.0\"\n  },\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"test\": \"ava test/*.js\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/factoryfour/task-helper.git\"\n  },\n  \"keywords\": [\n    \"factoryfour\",\n    \"tasks\",\n    \"datapoints\"\n  ],\n  \"author\": \"\",\n  \"license\": \"ISC\",\n  \"bugs\": {\n    \"url\": \"https://github.com/factoryfour/task-helper/issues\"\n  },\n  \"homepage\": \"https://github.com/factoryfour/task-helper#readme\",\n  \"devDependencies\": {\n    \"ava\": \"^0.22.0\",\n    \"esdoc\": \"^1.0.3\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"esdoc-unexported-identifier-plugin\": \"^1.0.0\"\n  },\n  \"dependencies\": {\n    \"ava\": \"^0.22.0\"\n  }\n}\n",
+    "longname": "C:\\Users\\Pranav\\Documents\\GitHub\\factoryfour\\task-helper\\package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manualIndex",
+    "globalIndex": false,
+    "content": null,
+    "longname": "",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "C:\\Users\\Pranav\\Documents\\GitHub\\factoryfour\\task-helper\\manuals\\manual_dp.md",
+    "name": "./manuals/manual_dp.md",
+    "content": "# Datapoints\n\n## Initialization\nInitialize a Datapoint, either empty, or with a type or format:\n\n```js\n// An empty Datapoint\nconst dp1 = new Datapoint();\n\n// A Datapoint with a type\nconst dp2 = new Datapoint('sample-type');\n\n// A Datapoint with a type and format\nconst dp3 = new Datapoint('sample-type', 'string');\n```\n\nSet type and format fields in a Datapoint\n```js\nconst dp1 = new Datapoint();\ndp1.setType('sample-type');\ndp1.setFormat('string');\n```\n\n## Set content\nContent must match the Datapoint's format\n```js\n// Set content as a JSON\nconst dp1 = new Datapoint();\ndp1.setFormat('string');\ndp1.setContent({ title: 'a_number', value: 'fifty-two' });\n\n// Set content with a string value\nconst dp2 = new Datapoint();\ndp2.setFormat('string');\ndp2.setContent('fifty-two');\n\n// Set content with a number value\nconst dp3 = new Datapoint();\ndp3.setFormat('number');\ndp3.setContent(52);\n```\n\n## Set permissions\nStandard permissions have GET, PUT, and DELETE parameters. They can be set at once or added one at a time.\n```js\n// Set all permissions at once\nconst newPerms = {\n    GET: ['bruce'],\n    PUT: ['clark'],\n    DELETE: ['diana']\n};\nconst dp1 = new Datapoint();\ndp1.setPermissions(newPerms);\n\n// Add permissions one at a time\nconst dp2 = new Datapoint();\ndp2.addPermission('GET', 'bruce');\ndp2.addPermission('PUT', 'clark');\ndp2.addPermission('DELETE', 'diana');\n```\n\nCustom permissions can take any format:\n```js\nconst dp1 = new Datapoint();\ndp1.setCustomPermissions('my-custom-permissions');\n```\n\n## Chain commands\nYou can chain functions for readability:\n```js\nconst dp1 = new Datapoint().setType('sample-type').setFormat('string').setContent('fifty-two');\n```\n\n## Generate a Datapoint\nThe `generate()` function validates a Datapoint and returns its data.\n```js\nconst dp1 = new Datapoint('sample-type', 'string').setContent({ value: 'hello' });\ndp1.addPermission('GET', 'bruce')\n    .addPermission('PUT', 'clark')\n    .addPermission('DELETE', 'diana');\ndp1.setParent('DC52');\n\nconst mydata = dp1.generate();\n```",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "C:\\Users\\Pranav\\Documents\\GitHub\\factoryfour\\task-helper\\manuals\\manual_to.md",
+    "name": "./manuals/manual_to.md",
+    "content": "# TaskOutput\n\n## Initialization\nInitialize a TaskOutput object:\n```js\nconst tout = new TaskOutput();\n```\n\n## Add Datapoints\nThe type of content must match the Datapoint's format.\n```js\n// Create a Datapoint\nconst dp1 = new Datapoint();\ndp1.setFormat('string');\ndp1.setContent({ title: 'a_number', value: 'fifty-two' });\n\n// Add the Datapoint to the TaskOutput\nconst tout = new TaskOutput();\ntout.addDatapoint(dp1);\n```\n\n## Add notifications\n```js\nconst tout = new TaskOutput();\nconst nt1 = { value: 'hello' };\nconst nt2 = { value: 'world' };\ntout.addNotification(nt1).addNotification(nt2);\n```\n\n## Add assignments\n```js\nconst tout = new TaskOutput();\nconst as1 = { value: 'goodnight' };\nconst as2 = { value: 'moon' };\ntout.addAssignment(as1).addAssignment(as2);\n```\n\n## Generate a TaskOutput object\nThe `generate()` function validates a TaskOutput and returns its data. \n```js\n// Sample Datapoint\nconst dp1 = new Datapoint('sample-type', 'string').setContent({ value: 'hello' });\ndp1.addPermission('GET', 'bruce')\n    .addPermission('PUT', 'clark')\n    .addPermission('DELETE', 'diana');\ndp1.setParent('DC52');\n\n// Sample notifications\nconst nt1 = { value: 'hello' };\nconst nt2 = { value: 'world' };\n\n// Sample assignments\nconst as1 = { value: 'goodnight' };\nconst as2 = { value: 'moon' };\n\n// Add them all to a TaskOutput object. Note that commands can be chained for readibility and ease of use.\nconst tout = new TaskOutput();\n// Datapoints can be added using either the Datapoint object or just the data\ntout.addDatapoint(dp1).addDatapoint(dp1.data);\ntout.addNotification(nt1).addNotification(nt2);\ntout.addAssignment(as1).addAssignment(as2);\n\n// Generate to validate fields and return the data\nconst myTaskOutput = tout.generate();\n```",
+    "static": true,
+    "access": "public"
+  }
+]

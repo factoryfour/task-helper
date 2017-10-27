@@ -1,6 +1,6 @@
 {
   "name": "@factoryfour/task-helper",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Helper classes for task output and datapoints",
   "engines": {
     "node": "6.10.0"
@@ -25,7 +25,10 @@
   },
   "homepage": "https://github.com/factoryfour/task-helper#readme",
   "devDependencies": {
-    "ava": "^0.22.0"
+    "ava": "^0.22.0",
+    "esdoc": "^1.0.3",
+    "esdoc-standard-plugin": "^1.0.0",
+    "esdoc-unexported-identifier-plugin": "^1.0.0"
   },
   "dependencies": {
     "ava": "^0.22.0"
