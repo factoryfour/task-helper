@@ -43,9 +43,18 @@ const jwksFetch = (req, header, payload, cb) => {
 	});
 };
 
-module.exports = (req, res, next) => jwt({
-	secret: jwksFetch,
-	audience: req.webtaskContext.meta.AUDIENCE,
-	issuer: `https://${req.webtaskContext.meta.DOMAIN}/`,
-	algorithms: ['RS256']
-})(req, res, next);
+module.exports = (req, res, next) => {
+	const audience = [];
+	if (req.webtaskContext.meta.AUDIENCE) {
+		audience.push(req.webtaskContext.meta.AUDIENCE);
+	}
+	if (req.webtaskContext.meta.DEV_AUDIENCE) {
+		audience.push(req.webtaskContext.meta.DEV_AUDIENCE);
+	}
+	return jwt({
+		secret: jwksFetch,
+		audience,
+		issuer: `https://${req.webtaskContext.meta.DOMAIN}/`,
+		algorithms: ['RS256']
+	})(req, res, next);
+};
