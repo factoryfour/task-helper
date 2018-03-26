@@ -2,8 +2,7 @@ const jwksRsa = require('jwks-rsa');
 const jwt = require('express-jwt');
 
 const jwksFetch = (req, header, payload, cb) => {
-	const issuer = `https://${req.webtaskContext.meta.DOMAIN}/`;
-	const jwks = jwksRsa.expressJwtSecret({ jwksUri: `${issuer}.well-known/jwks.json` });
+	const jwks = jwksRsa.expressJwtSecret({ jwksUri: `${header.iss}.well-known/jwks.json` });
 
 	return req.webtaskContext.storage.get((readError, data) => {
 		if (readError) {
@@ -45,7 +44,7 @@ const jwksFetch = (req, header, payload, cb) => {
 
 module.exports = (req, res, next) => jwt({
 	secret: jwksFetch,
-	audience: req.webtaskContext.meta.AUDIENCE.split(","),
-	issuer: `https://${req.webtaskContext.meta.DOMAIN}/`,
+	audience: req.webtaskContext.meta.AUDIENCE.split(','),
+	issuer: (req.webtaskContext.meta.DOMAIN).split(',').map((d) => (`https://${d}/`)),
 	algorithms: ['RS256']
 })(req, res, next);
