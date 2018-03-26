@@ -2,7 +2,7 @@ const jwksRsa = require('jwks-rsa');
 const jwt = require('express-jwt');
 
 const jwksFetch = (req, header, payload, cb) => {
-	const jwks = jwksRsa.expressJwtSecret({ jwksUri: `${header.iss}.well-known/jwks.json` });
+	const jwks = jwksRsa.expressJwtSecret({ jwksUri: `${payload.iss}.well-known/jwks.json` });
 
 	return req.webtaskContext.storage.get((readError, data) => {
 		if (readError) {
