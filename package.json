@@ -1,6 +1,6 @@
 {
   "name": "@factoryfour/task-helper",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "Helper classes for task output and datapoints",
   "engines": {
     "node": "6.10.0"
